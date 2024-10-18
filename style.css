@@ -1,0 +1,226 @@
+General Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333333; /* Charcoal */
+    background-color: #ffcccb; /* Peach color */
+    background: url('images/background.jpg') no-repeat center center fixed; /* Set the background image */
+    background-size: cover; /* Cover the entire body */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #003366; /* Dark Blue */
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* White */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0066cc; /* Light Blue on hover */
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    background-color: #0066cc; /* Light Blue */
+    padding: 1rem; /* Adjusted padding */
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    color: #ffffff; /* White */
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: #f5f5f5; /* Light Gray */
+    margin-top: 15px;
+}
+
+/* About Section */
+#about {
+    background-color: #bdcdca; /* White */
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #003366; /* Dark Blue */
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555555; /* Dark Gray */
+}
+
+/* Projects Section */
+#projects {
+    background-color: #0dcce246; /* White */
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #003366; /* Dark Blue */
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    background-color: #f5f5f5; /* Light Gray */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #3f1ec6; /* You can keep this or change to Dark Blue */
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #1119b3; /* You can keep this or change to Dark Gray */
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e4e7ed; /* White */
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #003366; /* Dark Blue */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+    color: #333333; /* Charcoal */
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #0d0d0d; /* Dark Gray */
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #003366; /* Dark Blue */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0066cc; /* Light Blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .project-list {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
+
+/* Skills Section */
+#skills {
+    background-color: #12d8d2; /* White */
+    text-align: center; /* Center text alignment */
+    padding: 50px 20px; /* Add some padding */
+}
+
+#skills h2 {
+    font-size: 2rem; /* Title size */
+    margin-bottom: 20px; /* Space below title */
+    color: #003366; /* Dark Blue */
+}
+
+#skills ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#skills ul li {
+    background-color: #f5f5f5; /* Light Gray background */
+    margin: 10px 0; /* Space between items */
+    padding: 10px; /* Padding around items */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Font size for skills */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+#skills ul li:hover {
+    background-color: #12aaf1; /* Slightly darker on hover */
+}
