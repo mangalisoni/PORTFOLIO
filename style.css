@@ -1,4 +1,4 @@
-General Styles
+  General Styles
 * {
     margin: 0;
     padding: 0;
@@ -53,12 +53,16 @@ section {
     max-width: 1100px;
     margin: 0 auto;
 }
-
+.div{
+    height:auto;
+    width:fit-content;
+}
 /* Home Section */
 #home {
     text-align: center;
     background-color: #0066cc; /* Light Blue */
     padding: 1rem; /* Adjusted padding */
+    height:500px;
 }
 
 #home h1 {
@@ -81,6 +85,8 @@ section {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #003366; /* Dark Blue */
+    text-align: center;
+
 }
 
 #about p {
@@ -91,12 +97,14 @@ section {
 /* Projects Section */
 #projects {
     background-color: #0dcce246; /* White */
+    text-align: center;
 }
 
 #projects h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #003366; /* Dark Blue */
+    align-items: center;
 }
 
 .project-list {
@@ -112,6 +120,7 @@ section {
     padding: 20px;
     width: 45%;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .project h3 {
